@@ -246,10 +246,16 @@ func latepaymentCalculation() {
 
 func main() {
 	exit = false
+
+	fmt.Printf("Installment Scheduler \n\n")
+
+	//Get inputs
 	getInputs()
 
 	for !exit {
 		clearConsole()
+		fmt.Printf("Installment Scheduler \n\n")
+
 		// Schedule Info
 		fmt.Printf("\n--- Schedule Info ---\n")
 		basicCalculations()
