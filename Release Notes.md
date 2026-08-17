@@ -31,20 +31,35 @@
 ### 🐛 Bug Fixes
 - None (Initial Release)
 
-### 📦 Installation
+### 📦 Getting Started
+Pre-built binaries are available in the `./bin/` directory for immediate use:
 ```bash
-go build -o installer cmd/main.go
-./installer
+./bin/installment-schedule-linux-amd64    # For Linux (AMD64)
+./bin/installment-schedule-darwin-amd64   # For macOS (Intel)
+./bin/installment-schedule-darwin-arm64   # For macOS (Apple Silicon)
 ```
 
-### 📝 What's Next
-- v1.1.0: Add CSV export functionality
-- v1.2.0: Support for custom penalty tiers
-- v1.3.0: Database persistence
-- v2.0.0: Web-based interface
+No installation required! Or, build from source:
+
+**On Windows:**
+```powershell
+./build.ps1
+```
+
+**On Linux/macOS:**
+If you have PowerShell Core (7+):
+```bash
+pwsh ./build.ps1
+```
+
+Otherwise, use Go directly:
+```bash
+go build -o installment-schedule cmd/main.go
+./installment-schedule
+```
 
 ### 👨‍💻 Contributors
-- Development Team
+- Dinesh Weerasinghe
 
 ---
 

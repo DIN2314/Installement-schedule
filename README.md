@@ -13,26 +13,37 @@ A powerful command-line tool for calculating installment payment schedules with 
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- Go 1.16 or higher
-
-### Installation
-
-```bash
-git clone https://github.com/yourusername/Installement-schedule.git
-cd Installement-schedule
-go build -o installer cmd/main.go
-```
-
 ### Running the Application
 
+Pre-built binaries are available in the `./bin/` directory for multiple platforms. No installation required!
+
+**On Linux/macOS:**
 ```bash
-./installer
+./bin/installment-schedule-linux-amd64    # For Linux (AMD64)
+./bin/installment-schedule-darwin-amd64   # For macOS (Intel)
+./bin/installment-schedule-darwin-arm64   # For macOS (Apple Silicon)
 ```
 
-On Windows:
-```cmd
-installer.exe
+**On Windows:**
+Simply download the appropriate binary and run it directly.
+
+### Building from Source
+
+**On Windows:**
+```powershell
+./build.ps1
+```
+
+**On Linux/macOS:**
+If you have PowerShell Core (7+) installed:
+```bash
+pwsh ./build.ps1
+```
+
+Otherwise, use Go directly:
+```bash
+go build -o installment-schedule cmd/main.go
+./installment-schedule
 ```
 
 ## 📖 Usage
