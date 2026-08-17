@@ -121,8 +121,8 @@ func getInputs() {
 func basicCalculations() {
 	// Calculations
 	downpayment = purchasePrice * downpaymentPercentage
+	fee = purchasePrice * feePercentage
 	financeAmount = purchasePrice - downpayment
-	fee = financeAmount * feePercentage
 	totalRepayable = financeAmount + fee
 	installmentPrice = totalRepayable / float64(monthlyInstallments)
 
